@@ -9,9 +9,11 @@ type Props = {
   features: string[];
   badge?: string;
   discount?: string;
+  checkoutUrl?: string;
 };
 
-export function ProductCard({ image, name, originalPrice, price, features, badge, discount }: Props) {
+export function ProductCard({ image, name, originalPrice, price, features, badge, discount, checkoutUrl }: Props) {
+  const href = checkoutUrl ?? CHECKOUT_URL;
   return (
     <article className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all hover:shadow-product">
       {discount && (
@@ -65,7 +67,7 @@ export function ProductCard({ image, name, originalPrice, price, features, badge
           </div>
 
           <a
-            href={CHECKOUT_URL}
+            href={href}
             className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-cta py-3.5 text-sm font-bold uppercase tracking-wide text-white shadow-md transition-all hover:brightness-110"
           >
             <ShoppingCart className="h-4 w-4" strokeWidth={2.5} />
