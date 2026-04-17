@@ -19,6 +19,8 @@ import bibliaKingJames from "@/assets/biblia-king-james.jpg";
 import { ProductCard } from "@/components/ProductCard";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { TrustBadges } from "@/components/TrustBadges";
+import { SideMenu } from "@/components/SideMenu";
+import { PromoPopup } from "@/components/PromoPopup";
 import { CHECKOUT_URL, CHECKOUT_KING_JAMES_URL } from "@/lib/constants";
 
 export const Route = createFileRoute("/")({
@@ -53,8 +55,9 @@ function Index() {
   return (
     <div className="min-h-screen bg-background">
       {/* TOP BAR */}
-      <div className="bg-primary text-primary-foreground">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-5 gap-y-1 px-4 py-2 text-center text-[11px] font-medium sm:text-xs">
+      <div className="relative bg-primary text-primary-foreground">
+        <SideMenu />
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-5 gap-y-1 px-12 py-2 text-center text-[11px] font-medium sm:text-xs">
           <span className="inline-flex items-center gap-1.5">
             <Truck className="h-3.5 w-3.5" /> FRETE GRÁTIS PARA TODO BRASIL
           </span>
