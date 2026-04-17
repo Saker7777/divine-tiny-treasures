@@ -15,10 +15,11 @@ import {
 import logo from "@/assets/logo-ebenezer.png";
 import bibliaIlustrada from "@/assets/biblia-ilustrada.jpg";
 import bibliaLetrasGrandes from "@/assets/biblia-letras-grandes.jpg";
+import bibliaKingJames from "@/assets/biblia-king-james.jpg";
 import { ProductCard } from "@/components/ProductCard";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { TrustBadges } from "@/components/TrustBadges";
-import { CHECKOUT_URL } from "@/lib/constants";
+import { CHECKOUT_URL, CHECKOUT_KING_JAMES_URL } from "@/lib/constants";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -134,7 +135,7 @@ function Index() {
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <ProductCard
               image={bibliaIlustrada}
               name="Bíblia Infantil Ilustrada"
@@ -160,6 +161,20 @@ function Index() {
                 "112 páginas de histórias bíblicas",
                 "Capa dura almofadada",
                 "Histórias envolventes e ilustradas",
+              ]}
+            />
+            <ProductCard
+              image={bibliaKingJames}
+              name="Bíblia King James Clássica"
+              originalPrice="R$ 69,90"
+              price="R$ 49,90"
+              discount="-29%"
+              checkoutUrl={CHECKOUT_KING_JAMES_URL}
+              features={[
+                "Tradução King James fiel ao original",
+                "Capa dura em couro sintético premium",
+                "Texto clássico e atemporal",
+                "Ideal para estudo e devocional",
               ]}
             />
           </div>
