@@ -65,7 +65,7 @@ export function TrustBadges() {
 
           {/* Compra protegida */}
           <div className="flex items-center justify-center gap-2 rounded-xl border border-border bg-background px-3 py-2.5">
-            <div className="flex h-8 w-8 items-center justify-center rounded-md bg-emerald-600 text-white">
+            <div className="flex h-8 w-8 items-center justify-center rounded-md bg-[#00a335] text-white">
               <ShieldCheck className="h-4 w-4" strokeWidth={2.5} />
             </div>
             <div className="text-left leading-tight">
