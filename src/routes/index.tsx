@@ -250,6 +250,7 @@ function Index() {
       </footer>
 
       <WhatsAppFloat />
+      <PromoPopup />
     </div>
   );
 }
