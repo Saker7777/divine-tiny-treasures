@@ -1,4 +1,4 @@
-import { ShieldCheck, Lock, Award, CreditCard } from "lucide-react";
+import { ShieldCheck, Lock, Award } from "lucide-react";
 
 export function TrustBadges() {
   return (
@@ -7,8 +7,7 @@ export function TrustBadges() {
         <p className="mb-5 text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
           Compra Segura · Certificações
         </p>
-        <div className="grid grid-cols-2 items-center gap-4 sm:grid-cols-3 lg:grid-cols-6">
-          {/* Reclame Aqui */}
+        <div className="grid grid-cols-2 items-center gap-4 sm:grid-cols-3 lg:grid-cols-5">
           <div className="flex items-center justify-center gap-2 rounded-xl border border-border bg-background px-3 py-2.5">
             <div className="flex h-8 w-8 items-center justify-center rounded-md bg-[#00a335] text-white">
               <Award className="h-4 w-4" strokeWidth={2.5} />
